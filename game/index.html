@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Archive — a stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0e16; height: 100%; }
+  body {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: sans-serif; color: #f4f7ff;
+    background: radial-gradient(circle at 50% 30%, #182233 0%, #0a0e16 70%);
+  }
+  h1 { font-size: 20px; letter-spacing: 3px; margin: 10px 0 4px; color: #f0c25e; }
+  p { margin: 0 0 10px; color: #aab6cc; font-size: 13px; }
+  canvas {
+    width: min(960px, 96vw);
+    aspect-ratio: 960 / 640;
+    background: #232c3d;
+    border: 2px solid #39445c;
+    border-radius: 8px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.6);
+    cursor: crosshair;
+    outline: none;
+  }
+</style>
+</head>
+<body>
+<h1>MIDNIGHT ARCHIVE</h1>
+<p>A quiet heist in three wings — recover every seal-key and reach the exit unseen.</p>
+<canvas id="game" width="960" height="640" tabindex="0"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
